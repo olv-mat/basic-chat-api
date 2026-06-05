@@ -22,14 +22,14 @@ import { SetRoutePolicy } from 'src/common/decorators/set-route-policy.decorator
 import { DefaultMessageResponseDto } from 'src/common/dtos/DefaultMessageResponse.dto';
 import type { UserInterface } from 'src/common/interfaces/user.interface';
 import { ResponseMapper } from 'src/common/mappers/response.mapper';
-import { UserIdParam } from 'src/common/swagger/decorators/user-id-param.decorator';
 import {
   SwaggerBadRequest,
   SwaggerForbidden,
   SwaggerInternalServerError,
   SwaggerNotFound,
   SwaggerUnauthorized,
-} from 'src/common/swagger/responses.swagger';
+} from 'src/common/settings/swagger/swagger.decorators';
+import { UserIdParam } from 'src/common/settings/swagger/swagger.properties';
 import { AuthGuard } from 'src/modules/auth/guards/auth.guard';
 import { RoutePolicies } from '../auth/enums/route-policies.enum';
 import { PoliciesGuard } from '../auth/guards/policies.guard';

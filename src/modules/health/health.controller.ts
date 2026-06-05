@@ -1,6 +1,6 @@
 import { Controller, Get, HttpCode, HttpStatus } from '@nestjs/common';
 import { ApiOperation } from '@nestjs/swagger';
-import { SwaggerInternalServerError } from 'src/common/swagger/responses.swagger';
+import { SwaggerInternalServerError } from 'src/common/settings/swagger/swagger.decorators';
 import { HealthService } from './health.service';
 
 @Controller('health')

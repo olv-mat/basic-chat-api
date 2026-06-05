@@ -6,7 +6,7 @@ import { Environments } from './common/enums/environments.enum';
 import { ErrorLoggingInterceptor } from './common/interceptors/error-logging.interceptor';
 import { RequestTimeInterceptor } from './common/interceptors/request-time.interceptor';
 import { ParseIntIdPipe } from './common/pipes/parse-int-id.pipe';
-import { swaggerSetup } from './common/swagger/setup.swagger';
+import { swaggerSetup } from './common/settings/swagger/swagger.setup';
 
 /*
   nest new <project>

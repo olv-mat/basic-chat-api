@@ -15,14 +15,14 @@ import { DefaultMessageResponseDto } from 'src/common/dtos/DefaultMessageRespons
 import { DefaultResponseDto } from 'src/common/dtos/DefaultResponse.dto';
 import type { UserInterface } from 'src/common/interfaces/user.interface';
 import { ResponseMapper } from 'src/common/mappers/response.mapper';
-import { MessageIdParm } from 'src/common/swagger/decorators/message-id-param.decorator';
 import {
   SwaggerBadRequest,
   SwaggerForbidden,
   SwaggerInternalServerError,
   SwaggerNotFound,
   SwaggerUnauthorized,
-} from 'src/common/swagger/responses.swagger';
+} from 'src/common/settings/swagger/swagger.decorators';
+import { MessageIdParm } from 'src/common/settings/swagger/swagger.properties';
 import { AuthGuard } from 'src/modules/auth/guards/auth.guard';
 import { RoutePolicies } from '../auth/enums/route-policies.enum';
 import { PoliciesGuard } from '../auth/guards/policies.guard';

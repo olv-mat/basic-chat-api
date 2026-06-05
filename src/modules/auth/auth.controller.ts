@@ -5,7 +5,7 @@ import {
   SwaggerInternalServerError,
   SwaggerNotFound,
   SwaggerUnauthorized,
-} from 'src/common/swagger/responses.swagger';
+} from 'src/common/settings/swagger/swagger.decorators';
 import { CreateUserDto } from '../user/dtos/CreateUser.dto';
 import { AuthService } from './auth.service';
 import { AuthResponseDto } from './dtos/AuthResponse.dto';
